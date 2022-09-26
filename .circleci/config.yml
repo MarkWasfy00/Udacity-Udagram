@@ -29,7 +29,7 @@ jobs:
       - run: npm run front:build
       - run: npm run back:build 
       - run: npm run front:deploy
-      
+      - run: cd storefront-api && eb list
      
 
 workflows:
