@@ -23,13 +23,14 @@ jobs:
       - aws-cli/setup
       - node/install:
           node-version: "16.16"
-      - run: eb init udagram-api --platform node.js --region us-east-1
       - run: npm run front:install
       - run: npm run back:install
       - run: npm run front:build
       - run: npm run back:build 
       - run: npm run front:deploy
-      - run: cd storefront-api && eb list
+      - run: eb init udagram-api --platform node.js --region us-east-1
+      - run: npm run back:env
+      - run: npm run back:deploy
      
 
 workflows:
