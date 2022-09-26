@@ -1,0 +1,19 @@
+{
+  "name": "udacity-udagram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "front:install": "cd storefront-frontend && npm install",
+    "front:build": "cd storefront-frontend && npm run build",
+    "front:deploy": "cd storefront-frontend && npm run deploy",
+    "back:install": "cd storefront-api && npm install", 
+    "back:test": "cd storefront-api && npm run test",
+    "back:build": "cd storefront-api && npm run build:zip",
+    "back:deploy": "cd storefront-api && npm run deploy",
+    "back:env": "cd storefront-api && npm run set:env"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

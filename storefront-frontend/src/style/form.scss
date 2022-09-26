@@ -1,0 +1,19 @@
+form {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    gap: 1rem;
+
+    input {
+        padding: 1rem;
+    }
+
+    button {
+        padding: 1rem;
+    }
+
+    .error {
+        text-align: center;
+        color: red;
+    }
+}

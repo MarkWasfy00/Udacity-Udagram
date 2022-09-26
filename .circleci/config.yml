@@ -1,0 +1,42 @@
+version: 2.1
+
+orbs:
+  eb: circleci/aws-elastic-beanstalk@2.0.1
+  node: circleci/node@5.0.2
+  aws-cli: circleci/aws-cli@3.1.3
+jobs:
+  backend:
+    docker:
+      - image: cimg/node:16.10
+    steps:
+      - checkout
+      - run: npm run back:install
+      - run:
+          name: Run tests and build
+          command: npm run test
+  deploy:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - checkout
+      - eb/setup
+      - aws-cli/setup
+      - node/install:
+          node-version: "16.16"
+      - run: eb init udagram-api --platform node.js --region us-east-1
+      - run: npm run front:install
+      - run: npm run back:install
+      - run: npm run front:build
+      - run: npm run back:build
+      - run: npm run back:env
+      - run: npm run front:deploy
+      - run: npm run back:deploy
+     
+
+workflows:
+  main:
+    jobs:
+      - build-test
+      - deploy:
+          requires:
+            - build-test

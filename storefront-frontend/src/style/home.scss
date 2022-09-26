@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: aqua;
+
+    .slogan {
+        font-size: 2rem;
+    }
+
+    .check {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: red;
+        }
+    }
+}
