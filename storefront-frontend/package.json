@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "deploy": "aws s3 cp --recursive  ./www s3://udagram-hosting",
+    "deploy": "aws s3 cp --recursive  ./dist s3://udagram-hosting",
     "preview": "vite preview"
   },
   "dependencies": {
