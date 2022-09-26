@@ -13,7 +13,7 @@ jobs:
       - run: npm run back:install
       - run:
           name: Run tests and build
-          command: npm run test
+          command: npm run back:test
   deploy:
     docker:
       - image: "cimg/base:stable"
