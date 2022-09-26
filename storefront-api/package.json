@@ -18,7 +18,7 @@
     "clean": "rm -rf www/ || true",
     "set:env": "eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_REGION=$AWS_REGION AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY JWT_TOKEN=$JWT_TOKEN PGHOST=$PGHOST PGPASSWORD=$PGPASSWORD PGPORT=$PGPORT PGUSER=$PGUSER PGDATABASE=$PGDATABASE PGTEST=$PGTEST PORT=$PORT PEPPER=$PEPPER NODE_ENV=$NODE_ENV HOST=$HOST AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION",
     "build:zip": "npm run clean && npx tsc && cp .npmrc www/.npmrc && cp package.json www/package.json && cp -R .elasticbeanstalk www/.elasticbeanstalk && cd www && zip -r Archive.zip . && cd ..",
-    "deploy": "eb deploy ",
+    "deploy": "eb deploy",
     "format": "prettier --write 'src/**/*.ts'",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"

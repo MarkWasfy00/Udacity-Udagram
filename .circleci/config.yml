@@ -27,10 +27,9 @@ jobs:
       - run: npm run front:install
       - run: npm run back:install
       - run: npm run front:build
-      - run: npm run back:build
-      - run: npm run back:env
+      - run: npm run back:build 
       - run: npm run front:deploy
-      - run: npm run back:deploy
+      
      
 
 workflows:
