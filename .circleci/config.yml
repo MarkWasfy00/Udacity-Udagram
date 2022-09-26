@@ -36,7 +36,7 @@ jobs:
 workflows:
   main:
     jobs:
-      - build-test
+      - backend
       - deploy:
           requires:
-            - build-test
+            - backend
