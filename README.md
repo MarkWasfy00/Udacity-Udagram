@@ -1,9 +1,9 @@
 ### Hosting a web application at aws
 
-this was the storefront app from last project , I used it in hosting , it doesn't contain any frontend in this project i used RDS , EB , and circleci to host my project 
+this was the storefront app from last project , I used it in hosting , added the login and register functionality to frontend uses jwt tokens
 
-visit my app at : `http://udagram-api-dev.eba-jdupgsxc.us-east-1.elasticbeanstalk.com`
-how to use this app at : `https://github.com/MarkWasfy00/Udacity-Storefront-Backend-Api`
+backend url : `http://udagram-api-dev.eba-jdupgsxc.us-east-1.elasticbeanstalk.com`
+frontend url : `http://udagram-hosting.s3-website.us-east-2.amazonaws.com`
 
 ### Screenshots
 
@@ -18,6 +18,13 @@ approve that eb console is working without any errors
 approve that rds console is working without any errors
 
 ![rds-console](./docs/rds.png "rds console")
+
+
+#### S3 Bucket Console
+
+approve that s3 console is working without any errors
+
+![s3-console](./docs/s3-console.png "s3 console")
 
 #### circleci
 
@@ -42,4 +49,5 @@ approve that circleci is working without any errors
 ### This App Built With
 
 - express (backend api)
+- vite - react (frontend)
 - node (excuter)
