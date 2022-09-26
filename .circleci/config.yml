@@ -28,9 +28,7 @@ jobs:
       - run: npm run front:build
       - run: npm run back:build 
       - run: npm run front:deploy
-      - run: eb init udagram-api --platform node.js --region us-east-1
-      - run: npm run back:env
-      - run: npm run back:deploy
+      - run: cd storefront-api && eb list
      
 
 workflows:
