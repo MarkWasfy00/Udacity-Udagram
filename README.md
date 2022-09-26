@@ -11,39 +11,39 @@ frontend url : `http://udagram-hosting.s3-website.us-east-2.amazonaws.com`
 
 approve that eb console is working without any errors
 
-![eb-console](./docs/eb-console.png "eb console")
+![eb-console](./documentation/images/eb-console.png "eb console")
 
 #### RDS Console
 
 approve that rds console is working without any errors
 
-![rds-console](./docs/rds.png "rds console")
+![rds-console](./documentation/images/rds.png "rds console")
 
 
 #### S3 Bucket Console
 
 approve that s3 console is working without any errors
 
-![s3-console](./docs/s3-console.png "s3 console")
+![s3-console](./documentation/images/s3-console.png "s3 console")
 
 #### circleci
 
 approve that circleci is working without any errors
 
-![circleci](./docs/circleci-console.png "circleci")
+![circleci](./documentation/images/circleci-console.png "circleci")
 
 
-![circleci-env](./docs/circleci-env.png "circleci-env")
+![circleci-env](./documentation/images/circleci-env.png "circleci-env")
 
 
 #### Schema
 
-![schema](./docs/schema.png "schema")
+![schema](./documentation/images/schema.png "schema")
 
 
 #### Architecture
 
-![Architecture](./docs/arch.png "Architecture")
+![Architecture](./documentation/images/arch.png "Architecture")
 
 
 ### This App Built With

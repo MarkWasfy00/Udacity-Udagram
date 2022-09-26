@@ -38,5 +38,10 @@ workflows:
     jobs:
       - backend
       - deploy:
+          filters:
+            branches:
+              only:
+                - master
+          type: approval
           requires:
             - backend
